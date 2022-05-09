@@ -1,0 +1,16 @@
+
+    {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "SSS"
+        ],
+        "key": {
+            "S": {
+            "item": "tabithas_elevators:elevator_green"
+            }
+        },
+        "result": {
+            "item": "tabithas_elevators:elevator_green_slab",
+            "count": 6
+        }
+    }

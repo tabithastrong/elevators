@@ -1,0 +1,24 @@
+
+    {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "SIS",
+            "CSC",
+            "SIS"
+        ],
+        "key": {
+            "S": {
+            "item": "minecraft:string"
+            },
+            "I": {
+            "item": "minecraft:iron_ingot"
+            },
+            "C": {
+            "item": "minecraft:cobblestone"
+            }
+        },
+        "result": {
+            "item": "tabithas_elevators:elevator_white",
+            "count": 3
+        }
+    }

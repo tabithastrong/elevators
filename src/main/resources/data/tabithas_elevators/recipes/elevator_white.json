@@ -1,0 +1,19 @@
+
+    {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "ED"
+        ],
+        "key": {
+            "E": {
+            "tag": "tabithas_elevators:elevator"
+            },
+            "D": {
+            "item": "minecraft:white_dye"
+            }
+        },
+        "result": {
+            "item": "tabithas_elevators:elevator_white",
+            "count": 1
+        }
+    }

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "tabithas_elevators",
+  "version": "${version}",
+  "name": "Tabithas Elevators",
+  "description": "Adding simple Elevators to Fabric!",
+  "authors": [
+    "TabithaStrong"
+  ],
+  "contact": {
+    "website": "https://tabithastrong.com/minecraft/",
+    "repo": "https://github.com/tabithastrong/elevators"
+  },
+  "license": "MIT",
+  "icon": "assets/tabithas_elevators/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.tabithastrong.elevators.client.TabithasElevatorsClient"
+    ],
+    "main": [
+      "com.tabithastrong.elevators.TabithasElevators"
+    ]
+  },
+  "mixins": [
+    "tabithas_elevators.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}

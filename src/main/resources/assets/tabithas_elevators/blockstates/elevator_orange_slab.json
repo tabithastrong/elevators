@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tabithas_elevators:block/elevator_orange_slab"
+    },
+    "type=double": {
+      "model": "tabithas_elevators:block/elevator_orange"
+    },
+    "type=top": {
+      "model": "tabithas_elevators:block/elevator_orange_slab_top"
+    }
+  }
+}

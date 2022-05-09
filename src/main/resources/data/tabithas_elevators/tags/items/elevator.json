@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        "tabithas_elevators:elevator_white",
+        "tabithas_elevators:elevator_black",
+        "tabithas_elevators:elevator_brown",
+        "tabithas_elevators:elevator_blue",
+        "tabithas_elevators:elevator_yellow",
+        "tabithas_elevators:elevator_green",
+        "tabithas_elevators:elevator_red",
+        "tabithas_elevators:elevator_orange",
+        "tabithas_elevators:elevator_magenta",
+        "tabithas_elevators:elevator_light_blue",
+        "tabithas_elevators:elevator_lime",
+        "tabithas_elevators:elevator_pink",
+        "tabithas_elevators:elevator_gray",
+        "tabithas_elevators:elevator_light_gray",
+        "tabithas_elevators:elevator_cyan",
+        "tabithas_elevators:elevator_purple"
+    ]
+}

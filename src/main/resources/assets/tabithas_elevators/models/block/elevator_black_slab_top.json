@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "tabithas_elevators:blocks/elevator_black",
+    "top": "tabithas_elevators:blocks/elevator_black",
+    "side": "tabithas_elevators:blocks/elevator_black_slab"
+  }
+}
