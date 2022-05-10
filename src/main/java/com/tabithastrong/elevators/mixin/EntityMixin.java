@@ -13,6 +13,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Entity.class)
 public class EntityMixin {
+
+    /***
+     * @param isSneaking - called from Minecraft and is used to determine if the player is sneaking
+     * @param info - can be used to cancel the function
+     *
+     * Mixin used to call the events we have created
+     */
     @Inject(at = @At("HEAD"), method="Lnet/minecraft/entity/Entity;setSneaking(Z)V")
     private void updateInput(boolean isSneaking, CallbackInfo info) {
         // Get entity

@@ -11,7 +11,7 @@
     "website": "https://tabithastrong.com/minecraft/",
     "repo": "https://github.com/tabithastrong/elevators"
   },
-  "license": "MIT",
+  "license": "GPL-3",
   "icon": "assets/tabithas_elevators/icon.png",
   "environment": "*",
   "entrypoints": {

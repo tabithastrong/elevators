@@ -33,5 +33,14 @@
   "block.tabithas_elevators.elevator_red_slab": "Red Elevator Slab",
   "block.tabithas_elevators.elevator_yellow_slab": "Yellow Elevator Slab",
 
-  "itemGroup.tabithas_elevators.item_group": "Tabitha's Elevators"
+  "itemGroup.tabithas_elevators.item_group": "Tabitha's Elevators",
+  "message.tabithas_elevators.notEnoughExperience": "Not enough XP to use elevator",
+  "message.tabithas_elevators.notFullEnough": "Not full enough to use elevator",
+  "message.tabithas_elevators.cantFindElevator": "Unable to locate elevator",
+  "message.tabithas_elevators.notEnoughSpace": "The elevator you are trying to travel to is blocked",
+
+  "tooltip.tabithas_elevators.requiresExperience": "Requires XP to travel",
+  "tooltip.tabithas_elevators.requiresHunger": "Requires food to travel",
+
+  "gamerule.tabithas_elevators.elevatorTraversalType": "Elevator requirement"
 }

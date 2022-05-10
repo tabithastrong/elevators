@@ -1,0 +1,19 @@
+
+    {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "ED"
+        ],
+        "key": {
+            "E": {
+            "tag": "tabithas_elevators:elevator_slab"
+            },
+            "D": {
+            "item": "minecraft:yellow_dye"
+            }
+        },
+        "result": {
+            "item": "tabithas_elevators:elevator_yellow_slab",
+            "count": 1
+        }
+    }

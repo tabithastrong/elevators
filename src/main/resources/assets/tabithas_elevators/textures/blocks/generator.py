@@ -1,7 +1,6 @@
 from os import listdir
 from os.path import isfile, join
 
-from numpy import block
 onlyfiles = [f for f in listdir("./") if isfile(join("./", f))]
 
 item_model = """{{

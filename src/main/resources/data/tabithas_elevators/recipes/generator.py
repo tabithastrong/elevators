@@ -37,6 +37,27 @@ recipe_template_slab = """
     }}
 """
 
+recipe_template_slab_dye = """
+    {{
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "ED"
+        ],
+        "key": {{
+            "E": {{
+            "tag": "tabithas_elevators:elevator_slab"
+            }},
+            "D": {{
+            "item": "minecraft:{0}_dye"
+            }}
+        }},
+        "result": {{
+            "item": "tabithas_elevators:elevator_{0}_slab",
+            "count": 1
+        }}
+    }}
+"""
+
 
 color_array = [
     "white",
@@ -61,10 +82,14 @@ for color in color_array:
     print("\"tabithas_elevators:elevator_" + color + "\",")
 
 for color in color_array:
-    file = open("elevator_" + color + ".json", "w")
-    file.write(recipe_template.format(color))
-    file.close()
+    # file = open("elevator_" + color + ".json", "w")
+    # file.write(recipe_template.format(color))
+    # file.close()
 
-    file = open("elevator_" + color + "_slab.json", "w")
-    file.write(recipe_template_slab.format(color))
+    # file = open("elevator_" + color + "_slab.json", "w")
+    # file.write(recipe_template_slab.format(color))
+    # file.close()
+
+    file = open("elevator_" + color + "_slab_dye.json", "w")
+    file.write(recipe_template_slab_dye.format(color))
     file.close()

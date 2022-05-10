@@ -13,6 +13,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerEntity.class)
 public class PlayerEntityMixin {
+
+    /***
+     * @param info Function info, used to cancel the event
+     * Mixin for PlayerEntity is used to determine when the player is jumping
+     */
     @Inject(at = @At("HEAD"), method="Lnet/minecraft/entity/player/PlayerEntity;jump()V", cancellable = true)
     private void updateInput(CallbackInfo info) {
         // Get the player and call the event
