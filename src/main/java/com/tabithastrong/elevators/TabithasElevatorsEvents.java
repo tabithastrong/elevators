@@ -10,7 +10,8 @@ import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -149,19 +150,19 @@ public class TabithasElevatorsEvents {
                     // If the player can't travel, check the types and figure out why we can't travel to say the correct message
                     if(!canTravel) {
                         if(traversalType == ElevatorTraversalType.EXPERIENCE) {
-                            player.sendMessage(new TranslatableText("message.tabithas_elevators.notEnoughExperience"), true);
+                            player.sendMessage(MutableText.of(new TranslatableTextContent("message.tabithas_elevators.notEnoughExperience")), true);
                             world.playSound(null, player.getBlockPos(), traversalType.sound, SoundCategory.BLOCKS, 0.2f, 0.7f);
                         } else if(traversalType == ElevatorTraversalType.HUNGER) {
-                            player.sendMessage(new TranslatableText("message.tabithas_elevators.notFullEnough"), true);
+                            player.sendMessage(MutableText.of(new TranslatableTextContent("message.tabithas_elevators.notFullEnough")), true);
                             world.playSound(null, player.getBlockPos(), traversalType.sound, SoundCategory.BLOCKS, 0.2f, 0.9f);
                         }
                     } else if(next == null) {
                         // If we can't find next elevator then tell the player
-                        player.sendMessage(new TranslatableText("message.tabithas_elevators.cantFindElevator"), true);
+                        player.sendMessage(MutableText.of(new TranslatableTextContent("message.tabithas_elevators.cantFindElevator")), true);
                         world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_PLAYER_SMALL_FALL, SoundCategory.BLOCKS, 0.2f, 1f);
                     } else {
                         // If we can't fit then tell the player
-                        player.sendMessage(new TranslatableText("message.tabithas_elevators.notEnoughSpace"), true);
+                        player.sendMessage(MutableText.of(new TranslatableTextContent("message.tabithas_elevators.notEnoughSpace")), true);
                         world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_WOOL_STEP, SoundCategory.BLOCKS, 0.2f, 1f);
                     }
                 }
