@@ -3,8 +3,11 @@ plugins {
     id 'maven-publish'
 }
 
-ENV = System.getenv()
-BUILD_NUMBER = ENV.containsKey("BUILD_NUMBER") ? ENV.get("BUILD_NUMBER") : 0
+def BUILD_NUMBER = System.getenv("BUILD_NUMBER")
+
+if(BUILD_NUMBER == null) {
+    BUILD_NUMBER = "dev"
+}
 
 version = project.minecraft_version + "-" + project.mod_version + "-" + BUILD_NUMBER
 group = project.maven_group
